@@ -5,7 +5,7 @@ html {
   overflow: hidden;
   background-color: #1a2c38;
   scrollbar-color: #2f4553 transparent;
-  -webkit-overflow-scrolling: touch;
+  overflow:scroll;
 }
 * {
   scrollbar-width: thin;
