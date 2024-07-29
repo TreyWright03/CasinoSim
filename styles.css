@@ -129,7 +129,7 @@ img {
   width: 385px;
   margin-bottom: .75rem;
   border-radius: 8px;
-  background-color: #213743;
+  background-color: #266d61;
 }
 #InfoBox2 {
   margin-left: .7rem;
@@ -137,7 +137,7 @@ img {
   height: 224px;
   width: 385px;
   border-radius: 8px;
-  background-color: #213743;
+  background-color: #b775ee;
 }
 #InfoBox3 {
   margin-left: .7rem;
@@ -145,7 +145,7 @@ img {
   height: 224px;
   width: 385px;
   border-radius: 8px;
-  background-color: #213743;
+  background-color: #7017e4;
 }
 
 .SearchBarTemp {
@@ -234,6 +234,7 @@ img {
   .Content {
     max-width: 90%;
   }
+
   #InfoBox1,
   #InfoBox2,
   #InfoBox3 {
@@ -271,20 +272,45 @@ img {
     max-width: 100%;
     
   }
+
   .SearchBarTemp,
   .SearchBarContainer,
   .SearchBar {
     display: none;
   }
+  .InfoTop {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+    scroll-snap-type: x mandatory; /* Snap effect */
+    scroll-padding-left: 0; /* Ensure start is aligned to left */
+  }
+
+  .InfoTop::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
 
   #InfoBox1,
   #InfoBox2,
   #InfoBox3 {
-    margin-left: 0px;
-    max-width: 85%;
-    max-height: 85%;
-    
+    flex: 0 0 100%; /* Make each box take full width */
+    height: 224px;
+    border-radius: 8px;
+    scroll-snap-align: start; /* Snap effect */
   }
+
+  .InfoTop::before {
+    content: "";
+    display: block;
+    width: 1px; /* Adjust to match gap */
+    height: 1px; /* Invisible spacer */
+    order: -1; /* Place at the start */
+  }
+  
   .Games {
     margin-top: 0.75rem;
     margin-right: 1rem;
@@ -292,7 +318,7 @@ img {
   }
   .GameBox {
     height: 150px;
-    width: 110px;
+    width: 120px;
     margin-left: 0.75rem;
   }
   #ThreeLines {
