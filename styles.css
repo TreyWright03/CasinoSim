@@ -117,6 +117,7 @@ img {
   margin-top: 2rem; 
   margin-bottom: 1rem;
   max-width: 100%;
+  gap: 6px;
   justify-content: center;
   align-content: flex-end;
   background-color: rgba(127, 255, 212, 0);
@@ -124,7 +125,7 @@ img {
 
 #InfoBox1 {
   height: 224px;
-  width: 390px;
+  width: 385px;
   margin-bottom: .75rem;
   border-radius: 8px;
   background-color: #213743;
@@ -133,7 +134,7 @@ img {
   margin-left: .7rem;
   margin-bottom: .75rem;
   height: 224px;
-  width: 390px;
+  width: 385px;
   border-radius: 8px;
   background-color: #213743;
 }
@@ -141,7 +142,7 @@ img {
   margin-left: .7rem;
   margin-bottom: .75rem;
   height: 224px;
-  width: 390px;
+  width: 385px;
   border-radius: 8px;
   background-color: #213743;
 }
@@ -151,7 +152,7 @@ img {
   display: flex;
   height: 2%;
   width: 100%;
-  background-color: rgba(242, 255, 127, 0);
+  background-color: rgba(159, 177, 0, 0);
 }
 
 .SearchBarContainer {
@@ -188,7 +189,7 @@ img {
   height: 225px;
   width: 188px;
   border-radius: 8px;
-  background-color: #213743;
+  background-color: #2137434b;
 }
 
 #Game1 {
@@ -253,7 +254,9 @@ img {
     background-color: #1a2c38;
     scrollbar-color: #2f4553 transparent;
   }
-
+  .Banner{
+    margin-left: 0px;
+  }
   
   .BannerContentFormat,
   .BannerContent{
@@ -264,10 +267,15 @@ img {
     max-width: 100%;
   }
   .Content {
-    max-width: 70%;
+    max-width: 100%;
     
   }
-  
+  .SearchBarTemp,
+  .SearchBarContainer,
+  .SearchBar {
+    display: none;
+  }
+
   #InfoBox1,
   #InfoBox2,
   #InfoBox3 {
@@ -276,12 +284,19 @@ img {
     max-height: 85%;
     
   }
+  .Games {
+    margin-top: 0.75rem;
+  }
   .GameBox {
-    width: 200px;
+    height: 175px;
+    width: 125px;
     margin-left: 0.75rem;
+  }
+  #ThreeLines {
+    display: none;
   }
   .SideBar{
     background-color: transparent;
   }
-}
 
+}
