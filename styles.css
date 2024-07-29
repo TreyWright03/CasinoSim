@@ -1,0 +1,270 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #1a2c38;
+  scrollbar-color: #2f4553 transparent;
+}
+* {
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+.SideBar {
+  margin-top: 0px;
+  max-width: 60px;
+  min-height: 100%;
+  background-color: #0b1e2b;
+}
+
+#ThreeLines {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  max-width: 3.75rem;
+  min-height: 3.75rem;
+  border-radius: var(--radius-base);
+  background-color: #0f212e;
+  box-shadow: #0003 0 4px 6px -1px;
+}
+#Home {
+  justify-content: center;
+  align-items: center;
+  max-width: 3.75rem;
+  height: 3.75rem;
+}
+
+.Main {
+  margin-top: -100vh;
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba(185, 175, 175, 0);
+}
+
+.Banner {
+  margin-left: 60px;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 60px;
+  background-color: #1a2c38;
+  box-shadow: #0003 0 4px 6px -1px;
+  z-index: 1000;
+}
+
+.InnerBanner {
+  max-width: 99.48%;
+  height: 100%;
+  background-color: rgba(136, 64, 23, 0);
+}
+
+.BannerContentFormat {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  height: 60px;
+  background-color: rgba(91, 206, 87, 0);
+}
+
+.BannerContent {
+  padding: 8px;
+  max-width: 1200px;
+  height: 44px;
+  background-color: rgba(206, 87, 87, 0);
+}
+
+img {
+  max-width: 90%;
+  height: 90%;
+  cursor: pointer;
+}
+
+.UnderBanner {
+  margin-left: 60px;
+  max-width: 96.888%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0);
+  overflow: hidden;
+}
+.OverflowScroll {
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba(7, 175, 71, 0);
+  overflow-y: scroll;
+}
+
+.Content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  height: 460%;
+  background-color: rgba(62, 67, 129, 0);
+}
+
+.InfoTop {
+  position: relative;
+  height: 6%;
+  max-width: 100%;
+  background-color: rgba(127, 255, 212, 0);
+}
+
+.InfoBoxes {
+  position: absolute;
+  bottom: 4px;
+  height: 224px;
+  max-width: 100%;
+  background-color: rgba(46, 44, 143, 0);
+}
+
+#InfoBox1 {
+  position: absolute;
+  left: 0px;
+  height: 224px;
+  width: 384.84px;
+  border-radius: 8px;
+  background-color: #213743;
+}
+#InfoBox2 {
+  position: absolute;
+  left: 34%;
+  height: 224px;
+  width: 384.84px;
+  border-radius: 8px;
+  background-color: #213743;
+}
+#InfoBox3 {
+  position: absolute;
+  right: 0px;
+  height: 224px;
+  width: 384.84px;
+  border-radius: 8px;
+  background-color: #213743;
+}
+
+.SearchBarTemp {
+  position: relative;
+  height: 2%;
+  width: 100%;
+  background-color: rgba(242, 255, 127, 0);
+}
+
+.SearchBarContainer {
+  position: absolute;
+  top: 25%;
+  height: 41px;
+  width: 100%;
+  background-color: rgba(127, 208, 255, 0);
+}
+.SearchBar {
+  position: absolute;
+  height: 41px;
+  width: 100%;
+  background-color: #0f212e;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2a404d;
+  border-radius: 100px;
+}
+
+.Games {
+  position: relative;
+  height: 42%;
+  width: 100%;
+  background-color: rgb(255, 146, 127);
+}
+
+.Leaderboard {
+  position: relative;
+  height: 25%;
+  width: 100%;
+  background-color: rgb(67, 143, 146);
+}
+
+.BottomInfo {
+  position: relative;
+  height: 25%;
+  width: 100%;
+  background-color: rgb(108, 78, 155);
+}
+
+.InfoBoxes {
+  position: absolute;
+  bottom: 4px;
+  height: 224px;
+  width: 100%;
+  background-color: rgba(46, 44, 143, 0);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+  .BannerContentFormat,
+  .BannerContent,
+  .Content {
+    max-width: 95%;
+  }
+
+  #InfoBox1,
+  #InfoBox2,
+  #InfoBox3 {
+    width: 30%;
+    height: auto;
+  }
+
+  #InfoBox2 {
+    left: 33%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .BannerContentFormat,
+  .BannerContent,
+  .Content {
+    max-width: 90%;
+  }
+
+  #InfoBox1,
+  #InfoBox2,
+  #InfoBox3 {
+    max-width: 25%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  #InfoBox2 {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .SideBar {
+    display: none;
+  }
+
+  .Banner,
+  .UnderBanner {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .BannerContentFormat,
+  .BannerContent,
+  .Content {
+    max-width: 85%;
+  }
+
+  #ThreeLines,
+  #Home {
+    max-width: 3rem;
+    height: 3rem;
+  }
+
+  .SearchBar {
+    width: 90%;
+  }
+}
