@@ -180,7 +180,7 @@ img {
   margin-top: 4rem; 
   max-width: 100%;
   justify-content: center;
-  align-content: flex-end;
+  align-content: center;
   background-color: rgba(255, 189, 127, 0);
 }
 
@@ -248,7 +248,7 @@ img {
 
 @media only screen and (max-width: 600px) {
   html {
-    height: 100lvh;
+    height: 100%;
     margin: 0;
     overflow: hidden;
     background-color: #1a2c38;
@@ -286,10 +286,12 @@ img {
   }
   .Games {
     margin-top: 0.75rem;
+    margin-right: 1rem;
+    padding-bottom: 10rem;
   }
   .GameBox {
-    height: 175px;
-    width: 125px;
+    height: 170px;
+    width: 120px;
     margin-left: 0.75rem;
   }
   #ThreeLines {
