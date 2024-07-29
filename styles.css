@@ -47,6 +47,7 @@ html {
 }
 
 .Banner {
+  position: fixed;
   margin-left: 60px;
   top: 0;
   left: 0;
@@ -88,6 +89,8 @@ img {
   margin-left: 60px;
   max-width: 96.888%;
   height: 100%;
+  display: flex;
+  justify-content: center;
   background-color: rgba(0, 255, 255, 0);
   overflow: hidden;
 }
@@ -99,6 +102,8 @@ img {
 }
 
 .Content {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -108,38 +113,35 @@ img {
 
 .InfoTop {
   position: relative;
-  height: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  min-height: 10rem;
   max-width: 100%;
+justify-content: center;
+  align-content: flex-end;
   background-color: rgba(127, 255, 212, 0);
 }
 
-.InfoBoxes {
-  position: absolute;
-  bottom: 4px;
-  height: 224px;
-  max-width: 100%;
-  background-color: rgba(46, 44, 143, 0);
-}
-
 #InfoBox1 {
-  position: absolute;
-  left: 0px;
   height: 224px;
   width: 384.84px;
+  margin-left: .75rem;
+  margin-bottom: .75rem;
   border-radius: 8px;
   background-color: #213743;
 }
 #InfoBox2 {
-  position: absolute;
-  left: 34%;
+  margin-left: .75rem;
+  margin-bottom: .75rem;
   height: 224px;
   width: 384.84px;
   border-radius: 8px;
   background-color: #213743;
 }
 #InfoBox3 {
-  position: absolute;
-  right: 0px;
+  margin-left: .75rem;
+  margin-bottom: .75rem;
   height: 224px;
   width: 384.84px;
   border-radius: 8px;
@@ -148,6 +150,7 @@ img {
 
 .SearchBarTemp {
   position: relative;
+  display: flex;
   height: 2%;
   width: 100%;
   background-color: rgba(242, 255, 127, 0);
@@ -173,16 +176,17 @@ img {
 
 .Games {
   position: relative;
+  display: flex;
   height: 42%;
   width: 100%;
-  background-color: rgb(255, 146, 127);
+  background-color: rgba(255, 146, 127, 0.678);
 }
 
 .Leaderboard {
   position: relative;
   height: 25%;
   width: 100%;
-  background-color: rgb(67, 143, 146);
+  background-color: rgba(67, 143, 146, 0);
 }
 
 .BottomInfo {
@@ -201,22 +205,18 @@ img {
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1260px) {
   .BannerContentFormat,
   .BannerContent,
   .Content {
-    max-width: 95%;
+    max-width: 90%;
   }
 
   #InfoBox1,
   #InfoBox2,
   #InfoBox3 {
-    width: 30%;
-    height: auto;
-  }
-
-  #InfoBox2 {
-    left: 33%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -227,17 +227,14 @@ img {
     max-width: 90%;
   }
 
+  .InfoTop {
+    margin-top: 0rem;
+  }
   #InfoBox1,
   #InfoBox2,
   #InfoBox3 {
-    max-width: 25%;
-    height: auto;
-    position: relative;
-    margin-bottom: 10px;
-  }
-
-  #InfoBox2 {
-    left: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
