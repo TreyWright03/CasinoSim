@@ -129,7 +129,8 @@ img {
   width: 385px;
   margin-bottom: .75rem;
   border-radius: 8px;
-  background-color: #266d61;
+  background-color: #266d6100;
+  background-image: url('Images/Left.png');
 }
 #InfoBox2 {
   margin-left: .7rem;
@@ -137,7 +138,8 @@ img {
   height: 224px;
   width: 385px;
   border-radius: 8px;
-  background-color: #b775ee;
+  background-color: #b875ee00;
+  background-image: url('Images/Middle.png');
 }
 #InfoBox3 {
   margin-left: .7rem;
@@ -145,7 +147,8 @@ img {
   height: 224px;
   width: 385px;
   border-radius: 8px;
-  background-color: #7017e4;
+  background-color: #7017e400;
+  background-image: url('Images/Right.png');
 }
 
 .SearchBarTemp {
@@ -194,23 +197,57 @@ img {
 }
 
 #Game1 {
-  background-color: rgba(255, 0, 0, 0.37);
+  background-color: rgba(255, 0, 0, 0);
+  background-image: url('Images/Mines.png');
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
 }
+
 #Game2 {
   margin-left: 0.75rem;
-  background-color: rgba(255, 94, 0, 0.37);
-}#Game3 {
+  background-color: rgba(255, 94, 0, 0);
+  background-image: url('Images/Plinko.png');
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#Game3 {
   margin-left: 0.75rem;
-  background-color: rgba(255, 196, 0, 0.37);
-}#Game4 {
+  background-color: rgba(255, 196, 0, 0);
+  background-image: url('Images/Crash.png');
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#Game4 {
   margin-left: 0.75rem;
-  background-color: rgba(187, 255, 0, 0.37);
-}#Game5 {
+  background-color: rgba(187, 255, 0, 0);
+  background-image: url('Images/Dice.png');
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#Game5 {
   margin-left: 0.75rem;
-  background-color: rgba(0, 195, 255, 0.37);
-}#Game6 {
+  background-color: rgba(0, 195, 255, 0);
+  background-image: url('Images/Keno.png');
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#Game6 {
   margin-left: 0.75rem;
-  background-color: rgba(55, 0, 255, 0.37);
+  background-color: rgba(55, 0, 255, 0);
+  background-image: url('Images/blackjack.png');
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  transition: transform 0.3s ease-in-out;
 }
 
 .Leaderboard {
@@ -278,6 +315,7 @@ img {
   .SearchBar {
     display: none;
   }
+
   .InfoTop {
     display: flex;
     flex-wrap: nowrap;
@@ -285,13 +323,10 @@ img {
     gap: 3rem;
     margin-left: 3rem;
     margin-right: 3rem;
+    align-items: right;
     -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
     scroll-snap-type: x mandatory; /* Snap effect */
     scroll-padding-left: 0; /* Ensure start is aligned to left */
-  }
-
-  .InfoTop::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for WebKit browsers */
   }
 
   #InfoBox1,
@@ -302,23 +337,15 @@ img {
     border-radius: 8px;
     scroll-snap-align: start; /* Snap effect */
   }
-
-  .InfoTop::before {
-    content: "";
-    display: block;
-    width: 1px; /* Adjust to match gap */
-    height: 1px; /* Invisible spacer */
-    order: -1; /* Place at the start */
-  }
   
   .Games {
-    margin-top: 0.75rem;
+    margin-top: 2rem;
     margin-right: 1rem;
     padding-bottom: 6rem;
   }
   .GameBox {
     height: 150px;
-    width: 120px;
+    width: 125px;
     margin-left: 0.75rem;
   }
   #ThreeLines {
