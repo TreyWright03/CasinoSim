@@ -2,7 +2,7 @@
 
 ## **Visit our website: [Casino Sim Website](https://treywright03.github.io/CasinoSim/)**
 
---
+---
 
  # UI/UX Designer / Programmer: Trey Wright
 
