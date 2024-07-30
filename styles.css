@@ -130,7 +130,9 @@ img {
   border-radius: 8px;
   background-color: #266d6100;
   background-image: url('Images/Left.png');
+  
 }
+
 #InfoBox2 {
   margin-left: .7rem;
   margin-bottom: .75rem;
@@ -194,6 +196,24 @@ img {
   border-radius: 8px;
   background-color: #2137434b;
 }
+#Game1:hover {
+  top: -10px;
+ }
+ #Game2:hover {
+  top: -10px;
+ }
+ #Game3:hover {
+  top: -10px;
+ }
+ #Game4:hover {
+  top: -10px;
+ }
+#Game5:hover {
+  top: -10px;
+ }
+#Game6:hover {
+ top: -10px;
+}
 
 #Game1 {
   background-color: rgba(255, 0, 0, 0);
@@ -201,52 +221,69 @@ img {
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 #Game2 {
   margin-left: 0.75rem;
   background-color: rgba(255, 94, 0, 0);
-  background-image: url('Images/Plinko.png');
+  background-image: url('Images/Crash.png');
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 #Game3 {
   margin-left: 0.75rem;
   background-color: rgba(255, 196, 0, 0);
-  background-image: url('Images/Crash.png');
+  background-image: url('Images/Dice.png');
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 #Game4 {
   margin-left: 0.75rem;
   background-color: rgba(187, 255, 0, 0);
-  background-image: url('Images/Dice.png');
+  background-image: url('Images/Plinko.png');
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 #Game5 {
   margin-left: 0.75rem;
   background-color: rgba(0, 195, 255, 0);
-  background-image: url('Images/Keno.png');
+  background-image: url('Images/blackjack.png');
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+  top: 0;
+  transition: top ease .3s;
 }
 
 #Game6 {
   margin-left: 0.75rem;
   background-color: rgba(55, 0, 255, 0);
-  background-image: url('Images/blackjack.png');
+  background-image: url('Images/Keno.png');
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 .Leaderboard {
