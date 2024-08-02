@@ -323,12 +323,16 @@ p{
 
 
 /* Responsive Styles */
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1280px) {
 
   .BannerContentFormat,
   .BannerContent,
   .Content {
     max-width: 90%;
+  }
+
+  #SignIn{
+    margin-left: 65%;
   }
 
   #InfoBox1,
@@ -343,6 +347,13 @@ p{
     margin-left: 0.75rem;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  #SignIn{
+    margin-left: 50%;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   html {
@@ -360,6 +371,7 @@ p{
   .BannerContent{
     max-width: 100%;
   }
+  
   .UnderBanner {
     margin-left: 0px;
     max-width: 100%;
@@ -388,6 +400,10 @@ p{
     scroll-padding-left: 0; /* Ensure start is aligned to left */
   }
 
+  #SignIn{
+    margin-left: 35%;
+  }
+
   #InfoBox1,
   #InfoBox2,
   #InfoBox3 {
@@ -414,4 +430,10 @@ p{
     background-color: transparent;
   }
 
+}
+
+@media only screen and (max-width: 425px) {
+  #SignIn{
+    margin-left: 20%;
+  }
 }
