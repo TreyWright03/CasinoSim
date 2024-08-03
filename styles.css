@@ -124,7 +124,7 @@ p{
   margin-right: auto;
   max-width: 1200px;
   height: 140%;
-  background-color: rgba(62, 67, 129, 0);
+  background-color: rgba(0, 17, 255, 0);
 }
 
 .InfoTop {
@@ -211,7 +211,9 @@ p{
   height: 225px;
   width: 188px;
   border-radius: 8px;
-  background-color: #2137434b;
+  border: 2px;
+  border-color: #21374300;
+  background-color: #21374300;
 }
 #Game1:hover {
   top: -10px;

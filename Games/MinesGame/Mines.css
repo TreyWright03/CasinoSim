@@ -1,0 +1,243 @@
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #1a2c38;
+  scrollbar-color: #2f4553 transparent;
+}
+* {
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+.SideBar {
+  margin-top: 0px;
+  max-width: 60px;
+  min-height: 100%;
+  background-color: #0b1e2b;
+}
+
+#ThreeLines {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  max-width: 3.75rem;
+  min-height: 3.75rem;
+  border-radius: var(--radius-base);
+  background-color: #0f212e;
+  box-shadow: #0003 0 4px 6px -1px;
+}
+#Home {
+  justify-content: center;
+  align-items: center;
+  max-width: 3.75rem;
+  height: 3.75rem;
+
+}
+
+.Main {
+  margin-top: -100vh;
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba(185, 175, 175, 0);
+}
+
+.Banner {
+  position: fixed;
+  margin-left: 60px;
+  top: 0;
+  left: 0;
+  width: 96.688%;
+  height: 60px;
+  background-color: #1a2c38;
+  box-shadow: #0003 0 4px 6px -1px;
+  z-index: 1000;
+}
+
+.BannerContentFormat {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  height: 44px;
+  padding: 8px;
+  background-color: rgba(91, 206, 87, 0);
+}
+
+img {
+  max-width: 87%;
+  height: 87%;
+  cursor: pointer;
+}
+
+p{
+  color: #ffffff;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#SignIn{
+  text-align: center;
+  width: 84px;
+  height: 44px;
+  background-color: rgba(0, 4, 255, 0);
+  border-radius: 4px;
+  margin-left: 74.4%;
+  cursor: pointer;
+}
+
+#Register{
+  text-align: center;
+  position: relative;
+  width: 91px;
+  height: 44px;
+  background-color: rgb(0, 132, 255);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.UnderBanner {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 60px;
+  max-width: 96.888%;
+  height: 100%;
+  justify-content: center;
+  background-color: rgba(0, 255, 255, 0);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.Content {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  height: 100%;
+  background-color: rgb(0, 17, 255);
+}
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 1280px) {
+
+  .BannerContentFormat,
+  .BannerContent,
+  .Content {
+    max-width: 90%;
+  }
+
+  #SignIn{
+    margin-left: 65%;
+  }
+
+  #InfoBox1,
+  #InfoBox2,
+  #InfoBox3 {
+    margin-left: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .GameBox {
+    width: 200px;
+    margin-left: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #SignIn{
+    margin-left: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  html {
+    height: 100lvh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #1a2c38;
+    scrollbar-color: #2f4553 transparent;
+  }
+  .Banner{
+    margin-left: 0px;
+  }
+  
+  .BannerContentFormat,
+  .BannerContent{
+    max-width: 100%;
+  }
+  
+  .UnderBanner {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .Content {
+    max-width: 100%;
+    
+  }
+
+  .SearchBarTemp,
+  .SearchBarContainer,
+  .SearchBar {
+    display: none;
+  }
+
+  .InfoTop {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: right;
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+    scroll-snap-type: x mandatory; /* Snap effect */
+    scroll-padding-left: 0; /* Ensure start is aligned to left */
+  }
+
+  #SignIn{
+    margin-left: 35%;
+  }
+
+  #InfoBox1,
+  #InfoBox2,
+  #InfoBox3 {
+    flex: 0 0 100%; /* Make each box take full width */
+    height: 224px;
+    border-radius: 8px;
+    scroll-snap-align: start; /* Snap effect */
+  }
+  
+  .Games {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    padding-bottom: 6rem;
+  }
+  .GameBox {
+    height: 150px;
+    width: 125px;
+    margin-left: 0.75rem;
+  }
+  #ThreeLines {
+    display: none;
+  }
+  .SideBar{
+    background-color: transparent;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  #SignIn{
+    margin-left: 20%;
+  }
+}
