@@ -38,7 +38,6 @@ html {
   align-items: center;
   max-width: 3.75rem;
   height: 3.75rem;
-
 }
 
 .Main {
@@ -76,14 +75,14 @@ img {
   cursor: pointer;
 }
 
-p{
+p {
   color: #ffffff;
   margin-top: 15px;
   font-weight: bold;
   font-size: 13px;
 }
 
-#SignIn{
+#SignIn {
   text-align: center;
   width: 84px;
   height: 44px;
@@ -93,7 +92,7 @@ p{
   cursor: pointer;
 }
 
-#Register{
+#Register {
   text-align: center;
   position: relative;
   width: 91px;
@@ -124,18 +123,15 @@ p{
   background-color: rgb(0, 17, 255);
 }
 
-
-
 /* Responsive Styles */
 @media only screen and (max-width: 1280px) {
-
   .BannerContentFormat,
   .BannerContent,
   .Content {
     max-width: 90%;
   }
 
-  #SignIn{
+  #SignIn {
     margin-left: 65%;
   }
 
@@ -153,11 +149,10 @@ p{
 }
 
 @media only screen and (max-width: 1000px) {
-  #SignIn{
+  #SignIn {
     margin-left: 50%;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   html {
@@ -167,22 +162,21 @@ p{
     background-color: #1a2c38;
     scrollbar-color: #2f4553 transparent;
   }
-  .Banner{
+  .Banner {
     margin-left: 0px;
   }
-  
+
   .BannerContentFormat,
-  .BannerContent{
+  .BannerContent {
     max-width: 100%;
   }
-  
+
   .UnderBanner {
     margin-left: 0px;
     max-width: 100%;
   }
   .Content {
     max-width: 100%;
-    
   }
 
   .SearchBarTemp,
@@ -204,7 +198,7 @@ p{
     scroll-padding-left: 0; /* Ensure start is aligned to left */
   }
 
-  #SignIn{
+  #SignIn {
     margin-left: 35%;
   }
 
@@ -216,7 +210,7 @@ p{
     border-radius: 8px;
     scroll-snap-align: start; /* Snap effect */
   }
-  
+
   .Games {
     margin-top: 2rem;
     margin-right: 1rem;
@@ -230,14 +224,13 @@ p{
   #ThreeLines {
     display: none;
   }
-  .SideBar{
+  .SideBar {
     background-color: transparent;
   }
-
 }
 
 @media only screen and (max-width: 425px) {
-  #SignIn{
+  #SignIn {
     margin-left: 20%;
   }
 }
