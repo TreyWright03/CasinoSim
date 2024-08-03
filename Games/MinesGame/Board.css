@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Habibi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #0f2236;
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container {
+  width: 54.5%;
+  height: 35vw;
+  background-color: #101f2f;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 1vw;
+}
+
+.mine {
+  width: 6.5vw;
+  height: 6.5vw;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  background-color: #20384b;
+}
+.mine:hover {
+  scale: 1.02;
+  transform: translateY(-5px);
+  background-color: #425c78;
+}
+.close {
+  padding: 8px 10px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 1.6vw;
+}
+
+#loose-model {
+  display: flex;
+  border: 3px solid #08fb07;
+  border-radius: 12px;
+  width: 15%;
+  position: absolute;
+  color: #08fb07;
+  z-index: 99999999;
+  height: 20%;
+  right: 12%;
+  top: 50%;
+  background-color: #1b2b39;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  scale: 0;
+}
+#win-model {
+  display: flex;
+  border: 3px solid #08fb07;
+  border-radius: 12px;
+  width: 15%;
+  position: absolute;
+  color: #08fb07;
+  z-index: 99999999;
+  height: 20%;
+  right: 12%;
+  top: 50%;
+  background-color: #1b2b39;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  scale: 0;
+}
+#top-loose,
+#top-win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top-loose,
+#top-win h2 {
+  font-size: 3vw;
+  font-weight: 400;
+}
+#overlay {
+  width: 41.7%;
+  z-index: 99999;
+  padding: 1vw;
+  height: 41.4vw;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: #101f2fa4;
+}
+#loot {
+  width: 30%;
+  height: 75%;
+  border-radius: 8px;
+  background-color: #20384b;
+  gap: 1vw;
+  padding: 1vw 0;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  position: relative;
+}
+#loot-overlay {
+  background-color: #101f2f;
+  width: 100%;
+  padding: 1vw 0;
+  left: 0%;
+  top: 0;
+  position: absolute;
+  display: none;
+  height: 100%;
+  border-radius: 8px;
+}
+#btn {
+  font-size: 1.4vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 90%;
+  background-color: #00e919;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 500;
+  z-index: 999999999;
+  height: 10%;
+  margin: 0 auto;
+}
+#btn img {
+  width: 3vw;
+}
+#wallet {
+  color: white;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5vw;
+}
+#wallet h2 {
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: #dadada;
+}
+#wallet-main {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dadada73;
+  width: auto;
+  background-color: #101f30;
+  align-items: center;
+  justify-content: space-between;
+}
+#wallet-main div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#wallet-main legend {
+  font-size: 1.4vw;
+}
+#wallet p {
+  font-size: 1.3vw;
+}
+#wallet i {
+  font-size: 1.6vw;
+  cursor: pointer;
+}
+#bet-amount {
+  padding: 0 1.5vw;
+}
+#doller-sign {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #6dbd13;
+}
+#bet-amount h2 {
+  font-size: 1vw;
+  color: #dadada;
+  font-weight: 300;
+}
+#bet-amount {
+  font-size: 1.2vw;
+  color: white;
+}
+#amount {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101f30;
+  align-items: center;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  width: 53%;
+  padding-right: 1vw;
+}
+#amount input {
+  padding: 0.8vw;
+  font-size: 1.2vw;
+  border: none;
+  width: 80%;
+  color: white;
+  background-color: transparent;
+}
+#amount input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+#amount input[type="number"]:focus {
+  outline: none;
+}
+#total-mines {
+  padding: 0 1.5vw;
+}
+#total-mines h2 {
+  font-size: 1vw;
+  color: #dadada;
+  font-weight: 300;
+}
+#mine-main {
+  border-radius: 5px;
+  background-color: #101f30;
+  /* padding: 1vw; */
+  color: white;
+  border: 1px solid #dadada;
+}
+#bet-main {
+  display: flex;
+  gap: 2px;
+}
+.amt-btn {
+  font-size: 1vw;
+  background-color: #2e4455;
+  color: white;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.9vw;
+}
+#low-money-message p {
+  font-size: 1.6vw;
+}
+#low-money-message {
+  position: absolute;
+  top: -20%;
+  transition: all ease-out 0.5s;
+  z-index: 9999999999;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dadada;
+  width: 50%;
+  border-radius: 5px;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1vw;
+  align-items: center;
+  z-index: 99999999999;
+}
+#wrong-passcode-message {
+  position: absolute;
+  top: -20%;
+  transition: all ease-out 0.5s;
+  z-index: 9999999999;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dadada;
+  width: 50%;
+  border-radius: 5px;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1vw;
+  align-items: center;
+  z-index: 99999999999;
+}
+#big-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #101f2fab;
+  position: absolute;
+  display: none;
+  z-index: 99999999999999;
+}
+#total-profit {
+  padding: 0 1.5vw;
+  display: none;
+}
+#total-profit h2 {
+  font-size: 1vw;
+  color: #dadada;
+  font-weight: 300;
+}
+#profit-main {
+  font-weight: 300;
+}
+#profit-main {
+  font-size: 1vw;
+  color: white;
+  width: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+  background-color: #101f30;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+
+#add-model label {
+  font-size: 3vw;
+}
+.divs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+.divs input {
+  border-radius: 5px;
+  padding: 1vw;
+  font-size: 1.4vw;
+}
+.divs input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.divs input:focus {
+  outline: none;
+}
+#add {
+  padding: 1vw;
+  background-color: #35bb42;
+  font-size: 1.4vw;
+  border-radius: 5px;
+  width: 30%;
+  outline: none;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+}
+#add-model {
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: white;
+  z-index: 9999999999;
+  border-radius: 8px;
+  padding: 3vw;
+  flex-direction: column;
+  transition: all ease-in 0.3s;
+  scale: 0;
+}
+#add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+#add-model .cross {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 2vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -2%;
+  top: -2%;
+}
+#footer {
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#footer p {
+  font-size: 1vw;
+  color: #dadada;
+  font-weight: 200;
+}
+#footer a {
+  text-decoration: none;
+}
+
+#dropdown {
+  background-color: #101f30;
+  color: #fff;
+  padding: 1vw;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2vw;
+}
+.volume {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2vw;
+  padding: 1vw;
+  cursor: pointer;
+  color: #fff;
+}
+@media screen and (max-width: 1550px) {
+  .mine {
+    width: 7.7vw;
+    height: 7.7vw;
+  }
+  #container,
+  #overlay {
+    height: 42vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .mine {
+    width: 7.6vw;
+    height: 7.6vw;
+  }
+  #container,
+  #overlay {
+    height: 42vw;
+  }
+  #wallet-main p,
+  #wallet-main legend,
+  #amount input #mine-form select {
+    font-size: 1.4vw;
+  }
+  #loot h2 {
+    font-size: 1.6vw;
+  }
+  .amt-btn {
+    font-size: 1.2vw;
+    padding: 1.2vw 0.6vw;
+  }
+  #loot {
+    height: 80%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mine {
+    width: 7.53vw;
+    height: 7.53vw;
+  }
+  #container,
+  #overlay {
+    height: 44vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mine {
+    width: 8vw;
+    height: 8vw;
+  }
+  #container,
+  #overlay {
+    height: 45vw;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mine {
+    width: 7.8vw;
+    height: 7.8vw;
+  }
+  #container,
+  #overlay {
+    height: 48vw;
+  }
+  #loot {
+    width: 40%;
+    height: 70%;
+  }
+
+  #doller-sign {
+    width: 20px;
+    height: 20px;
+  }
+
+  #loot h2 {
+    font-size: 2vw;
+  }
+  #btn {
+    font-size: 2.4vw;
+    margin-top: 1vw;
+  }
+}
+@media screen and (max-width: 800px) {
+}
+
+@keyframes anime {
+  0% {
+    opacity: 1;
+    scale: 1.1;
+  }
+  30% {
+    opacity: 1;
+    scale: 1.15;
+  }
+  70% {
+    scale: 0.1;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(7px, 5px);
+    background-color: rgba(255, 0, 0, 0.479);
+    filter: contrast(200%) blur(3px);
+  }
+  20% {
+    transform: translate(-7px, 6px);
+    filter: contrast(-50%) blur(10px);
+    background-color: rgba(255, 0, 0, 0.568);
+  }
+  35% {
+    transform: translate(6px, -7px);
+    background-color: rgba(255, 0, 0, 0.973);
+    filter: contrast(100%) blur(3px);
+  }
+  50% {
+    transform: translate(0, 0);
+    background-color: rgba(255, 0, 0, 0.068);
+    filter: contrast(100%) blur(15px);
+  }
+  60% {
+    transform: translate(-4px, 8px);
+    background-color: rgba(255, 0, 0, 0.973);
+    filter: contrast(100%) blur(10px);
+  }
+  70% {
+    transform: translate(7px, 5px);
+    background-color: rgba(255, 0, 0, 0.493);
+    filter: contrast(100%) blur(5px);
+  }
+  80% {
+    transform: translate(-7px, 6px);
+    background-color: rgba(255, 0, 0, 0.308);
+    filter: contrast(100%) blur(3px);
+  }
+  90% {
+    transform: translate(6px, -7px);
+    background-color: rgba(255, 0, 0, 0.904);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

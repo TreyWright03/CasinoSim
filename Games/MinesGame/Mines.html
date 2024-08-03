@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mines</title>
     <link rel="stylesheet" href="/CasinoSim/Games/MinesGame/Mines.css" />
+    <link rel="stylesheet" href="/CasinoSim/Games/MinesGame/Board.css" />
   </head>
   <body>
     <div class="SideBar">
@@ -16,7 +17,10 @@
     <div class="Main">
       <div class="Banner">
         <div class="BannerContentFormat">
-          <img src="/CasinoSim/Images/logo.png" />
+          <img
+            src="/CasinoSim/Images/logo.png"
+            onclick="window.location.href='/CasinoSim/index.html';"
+          />
           <div id="SignIn">
             <p>Sign In</p>
           </div>
@@ -27,7 +31,139 @@
       </div>
 
       <div class="UnderBanner">
-        <div class="Content"></div>
+        <div class="Content">
+          <main>
+            <audio id="explosion" src="explosion.mp3"></audio>
+            <div id="big-overlay"></div>
+            <div id="add-model">
+              <i class="ri-close-line cross"></i>
+              <form action="" id="add-form">
+                <div class="divs">
+                  <label for="amt">Amount</label>
+                  <input
+                    type="number"
+                    name="amt"
+                    id="amt"
+                    max="1000"
+                    placeholder="$69"
+                  />
+                </div>
+                <div class="divs">
+                  <label for="secret">Secret Code</label>
+                  <input type="text" name="secret" id="secret" />
+                </div>
+                <button id="add" type="submit">Add Money</button>
+              </form>
+            </div>
+            <div id="low-money-message">
+              <p>Not Enough Money</p>
+              <i class="ri-close-line close"></i>
+            </div>
+            <div id="wrong-passcode-message">
+              <p>Wrong Passcode</p>
+              <i class="ri-close-line close"></i>
+            </div>
+            <div id="overlay"></div>
+            <div id="loose-model">
+              <div id="top-loose">
+                <h2>0</h2>
+                <h3>X</h3>
+              </div>
+              <div id="bottom-loose">
+                <h4>$0.000000</h4>
+              </div>
+            </div>
+            <div id="win-model">
+              <div id="top-win">
+                <h2>1.3</h2>
+                <h3>X</h3>
+              </div>
+              <div id="bottom-win">
+                <h4>$1.2350000</h4>
+              </div>
+            </div>
+            <div id="loot">
+              <i id="volumeIcon" class="ri-volume-mute-line volume"></i>
+              <div id="loot-overlay"></div>
+              <div id="wallet">
+                <h2>wallet</h2>
+                <div id="wallet-main">
+                  <div>
+                    <legend>$</legend>
+                    <p></p>
+                  </div>
+                  <i class="ri-add-line" onclick="addmodel()"></i>
+                  <!-- <i class="ri-add-line"></i> -->
+                </div>
+              </div>
+              <div id="bet-amount">
+                <h2>Bet Amount</h2>
+                <div id="bet-main">
+                  <div id="amount">
+                    <input
+                      type="number"
+                      name="money"
+                      min="0"
+                      inputmode="numeric"
+                      id="money"
+                    />
+                    <p id="doller-sign">$</p>
+                  </div>
+                  <div id="bet-btn">
+                    <button class="amt-btn" id="half">1/2 x</button>
+                    <button class="amt-btn" id="double">2 x</button>
+                    <button class="amt-btn" id="full-wallet">Wallet</button>
+                  </div>
+                </div>
+              </div>
+              <div id="total-mines">
+                <h2>Mines</h2>
+                <div id="mine-main">
+                  <form action="" id="mine-form">
+                    <select id="dropdown">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              <div id="total-profit">
+                <h2>Total profit(1.69X)</h2>
+                <div id="profit-main">
+                  <h4>0.0</h4>
+                  <p id="doller-sign">$</p>
+                </div>
+              </div>
+              <button id="btn">
+                <p>Bet</p>
+              </button>
+            </div>
+            <div id="container"></div>
+            <div id="footer"></div>
+          </main>
+        </div>
       </div>
     </div>
     <script src="Mines.js"></script>
