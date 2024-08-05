@@ -38,7 +38,6 @@ html {
   align-items: center;
   max-width: 3.75rem;
   height: 3.75rem;
-
 }
 
 .Main {
@@ -76,14 +75,14 @@ img {
   cursor: pointer;
 }
 
-p{
+p {
   color: #ffffff;
   margin-top: 15px;
   font-weight: bold;
   font-size: 13px;
 }
 
-#SignIn{
+#SignIn {
   text-align: center;
   width: 84px;
   height: 44px;
@@ -93,7 +92,7 @@ p{
   cursor: pointer;
 }
 
-#Register{
+#Register {
   text-align: center;
   position: relative;
   width: 91px;
@@ -131,7 +130,7 @@ p{
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem; 
+  margin-top: 2rem;
   margin-bottom: 1rem;
   max-width: 100%;
   gap: 6px;
@@ -143,30 +142,29 @@ p{
 #InfoBox1 {
   height: 224px;
   width: 385px;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   border-radius: 8px;
   background-color: #266d6100;
-  background-image: url('Images/Left.png');
-  
+  background-image: url("Images/Left.png");
 }
 
 #InfoBox2 {
-  margin-left: .7rem;
-  margin-bottom: .75rem;
+  margin-left: 0.7rem;
+  margin-bottom: 0.75rem;
   height: 224px;
   width: 385px;
   border-radius: 8px;
   background-color: #b875ee00;
-  background-image: url('Images/Middle.png');
+  background-image: url("Images/Middle.png");
 }
 #InfoBox3 {
-  margin-left: .7rem;
-  margin-bottom: .75rem;
+  margin-left: 0.7rem;
+  margin-bottom: 0.75rem;
   height: 224px;
   width: 385px;
   border-radius: 8px;
   background-color: #7017e400;
-  background-image: url('Images/Right.png');
+  background-image: url("Images/Right.png");
 }
 
 .SearchBarTemp {
@@ -199,7 +197,7 @@ p{
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 4rem; 
+  margin-top: 4rem;
   max-width: 100%;
   justify-content: center;
   align-content: center;
@@ -207,7 +205,7 @@ p{
 }
 
 .GameBox {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   height: 225px;
   width: 188px;
   border-radius: 8px;
@@ -217,26 +215,26 @@ p{
 }
 #Game1:hover {
   top: -10px;
- }
- #Game2:hover {
+}
+#Game2:hover {
   top: -10px;
- }
- #Game3:hover {
+}
+#Game3:hover {
   top: -10px;
- }
- #Game4:hover {
+}
+#Game4:hover {
   top: -10px;
- }
+}
 #Game5:hover {
   top: -10px;
- }
+}
 #Game6:hover {
- top: -10px;
+  top: -10px;
 }
 
 #Game1 {
   background-color: rgba(255, 0, 0, 0);
-  background-image: url('Images/Mines.png');
+  background-image: url("Images/Mines.png");
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -249,7 +247,7 @@ p{
 #Game2 {
   margin-left: 0.75rem;
   background-color: rgba(255, 94, 0, 0);
-  background-image: url('Images/Crash.png');
+  background-image: url("Images/Crash.png");
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -262,7 +260,7 @@ p{
 #Game3 {
   margin-left: 0.75rem;
   background-color: rgba(255, 196, 0, 0);
-  background-image: url('Images/Dice.png');
+  background-image: url("Images/Dice.png");
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -275,7 +273,7 @@ p{
 #Game4 {
   margin-left: 0.75rem;
   background-color: rgba(187, 255, 0, 0);
-  background-image: url('Images/Plinko.png');
+  background-image: url("Images/Plinko.png");
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -288,20 +286,20 @@ p{
 #Game5 {
   margin-left: 0.75rem;
   background-color: rgba(0, 195, 255, 0);
-  background-image: url('Images/blackjack.png');
+  background-image: url("Images/blackjack.png");
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   position: relative;
   top: 0;
-  transition: top ease .3s;
+  transition: top ease 0.3s;
   cursor: pointer;
 }
 
 #Game6 {
   margin-left: 0.75rem;
   background-color: rgba(55, 0, 255, 0);
-  background-image: url('Images/Keno.png');
+  background-image: url("Images/Keno.png");
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -323,17 +321,15 @@ p{
   background-color: rgb(108, 78, 155);
 }
 
-
 /* Responsive Styles */
 @media only screen and (max-width: 1280px) {
-
   .BannerContentFormat,
   .BannerContent,
   .Content {
     max-width: 90%;
   }
 
-  #SignIn{
+  #SignIn {
     margin-left: 65%;
   }
 
@@ -351,11 +347,10 @@ p{
 }
 
 @media only screen and (max-width: 1000px) {
-  #SignIn{
+  #SignIn {
     margin-left: 50%;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   html {
@@ -365,22 +360,21 @@ p{
     background-color: #1a2c38;
     scrollbar-color: #2f4553 transparent;
   }
-  .Banner{
+  .Banner {
     margin-left: 0px;
   }
-  
+
   .BannerContentFormat,
-  .BannerContent{
+  .BannerContent {
     max-width: 100%;
   }
-  
+
   .UnderBanner {
     margin-left: 0px;
     max-width: 100%;
   }
   .Content {
     max-width: 100%;
-    
   }
 
   .SearchBarTemp,
@@ -402,7 +396,7 @@ p{
     scroll-padding-left: 0; /* Ensure start is aligned to left */
   }
 
-  #SignIn{
+  #SignIn {
     margin-left: 35%;
   }
 
@@ -414,7 +408,7 @@ p{
     border-radius: 8px;
     scroll-snap-align: start; /* Snap effect */
   }
-  
+
   .Games {
     margin-top: 2rem;
     margin-right: 1rem;
@@ -428,14 +422,13 @@ p{
   #ThreeLines {
     display: none;
   }
-  .SideBar{
+  .SideBar {
     background-color: transparent;
   }
-
 }
 
 @media only screen and (max-width: 425px) {
-  #SignIn{
+  #SignIn {
     margin-left: 20%;
   }
 }

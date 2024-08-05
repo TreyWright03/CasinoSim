@@ -23,7 +23,9 @@ main {
 #container {
   width: 54.5%;
   height: 35vw;
-  background-color: #101f2f;
+  margin-left: 2%;
+  border-radius: 8px;
+  background-color: #101f30;
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
@@ -55,15 +57,15 @@ main {
 
 #loose-model {
   display: flex;
-  border: 3px solid #08fb07;
+  border: 3px solid #fb0707;
   border-radius: 12px;
-  width: 15%;
+  width: 29%;
   position: absolute;
-  color: #08fb07;
+  color: #fb0707;
   z-index: 99999999;
-  height: 20%;
-  right: 12%;
-  top: 50%;
+  height: 15%;
+  right: 0%;
+  top: 49.5%;
   background-color: #1b2b39;
   display: flex;
   flex-direction: column;
@@ -76,13 +78,13 @@ main {
   display: flex;
   border: 3px solid #08fb07;
   border-radius: 12px;
-  width: 15%;
+  width: 29%;
   position: absolute;
   color: #08fb07;
   z-index: 99999999;
-  height: 20%;
-  right: 12%;
-  top: 50%;
+  height: 15%;
+  right: 0%;
+  top: 49.5%;
   background-color: #1b2b39;
   display: flex;
   flex-direction: column;
@@ -103,18 +105,16 @@ main {
   font-weight: 400;
 }
 #overlay {
-  width: 41.7%;
+  width: 100%;
   z-index: 99999;
-  padding: 1vw;
-  height: 41.4vw;
-  right: 5%;
+  height: 100%;
   cursor: pointer;
   display: none;
   position: absolute;
   background-color: #101f2fa4;
 }
 #loot {
-  width: 35%;
+  width: 40%;
   height: 75%;
   border-radius: 8px;
   background-color: #20384b;
@@ -189,7 +189,7 @@ main {
   font-size: 1.3vw;
 }
 #wallet i {
-  font-size: 1.6vw;
+  font-size: 1.7vw;
   cursor: pointer;
 }
 #bet-amount {
@@ -216,12 +216,12 @@ main {
 }
 #amount {
   display: flex;
-  justify-content: space-between;
   background-color: #101f30;
   align-items: center;
   border: 1px solid #dadada;
   border-radius: 5px;
-  width: 53%;
+  width: 37%;
+  height: 25%;
   padding-right: 1vw;
 }
 #amount input {
@@ -276,8 +276,9 @@ main {
   transition: all ease-out 0.5s;
   z-index: 9999999999;
   left: 50%;
+  color: white;
   transform: translate(-50%, -50%);
-  background-color: #1c474e;
+  background-color: #4e1c1c;
   width: 50%;
   border-radius: 5px;
   height: 10%;
@@ -288,13 +289,14 @@ main {
   z-index: 99999999999;
 }
 #wrong-passcode-message {
+  color: rgb(255, 255, 255);
   position: absolute;
   top: -20%;
   transition: all ease-out 0.5s;
   z-index: 9999999999;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #dadada;
+  background-color: #a72d2ddc;
   width: 50%;
   border-radius: 5px;
   height: 10%;
@@ -338,18 +340,19 @@ main {
 }
 
 #add-model label {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 .divs {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1vw;
+  color: white;
 }
 .divs input {
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 1vw;
-  font-size: 1.4vw;
+  font-size: 2vw;
 }
 .divs input[type="number"] {
   -moz-appearance: textfield;
@@ -359,24 +362,25 @@ main {
   outline: none;
 }
 #add {
-  padding: 1vw;
+  padding: 1.5vw;
   background-color: #35bb42;
-  font-size: 1.4vw;
-  border-radius: 5px;
-  width: 30%;
+  font-size: 2vw;
+  border-radius: 8px;
+  width: 68%;
   outline: none;
   margin: auto;
+  margin-top: 5px;
   border: none;
   cursor: pointer;
 }
 #add-model {
   width: 70%;
-  height: 70%;
-  top: 50%;
+  height: 60%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  background-color: white;
+  background-color: rgb(35, 53, 73);
   z-index: 9999999999;
   border-radius: 8px;
   padding: 3vw;
@@ -390,19 +394,19 @@ main {
   gap: 2vw;
 }
 #add-model .cross {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(127, 148, 156, 0);
   color: white;
   padding: 10px;
-  width: 25px;
-  height: 25px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  font-size: 2vw;
+  font-size: 3vw;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: -2%;
+  right: -1%;
   top: -2%;
 }
 #footer {
@@ -454,14 +458,177 @@ main {
 
   #loot {
     margin-top: 2rem;
-    height: 10rem;
-    width: 23rem;
+    height: 12rem;
+    width: 25rem;
+  }
+  #btn {
+    font-size: 2.5vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 96%;
+    color: black;
+    background-color: #00ff1a;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 500;
+    z-index: 999999999;
+    height: 13%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+  #btn img {
+    width: 3vw;
+  }
+  #amount {
+    display: flex;
+    background-color: #101f30;
+    align-items: center;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    width: 64.7%;
+    height: 25%;
+    padding-right: 1vw;
+  }
+
+  .amt-btn {
+    font-size: 3vw;
+    background-color: #2e4455;
+    color: white;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.9vw;
+  }
+
+  #amount input {
+    padding: 0.8vw;
+    font-size: 3vw;
+    border: none;
+    width: 90%;
+    color: white;
+    background-color: transparent;
+  }
+
+  #total-mines {
+    padding: 0 1.5vw;
+  }
+  #total-mines h2 {
+    font-size: 2vw;
+    color: #dadada;
+    font-weight: 300;
+  }
+  #mine-main {
+    border-radius: 5px;
+    background-color: #101f30;
+    padding: 1vw;
+    font-size: 2vw;
+    color: white;
+    border: 1px solid #dadada;
+  }
+  #dropdown {
+    font-size: 2.5vw;
+  }
+
+  #bet-amount h2 {
+    font-size: 2vw;
+    color: #dadada;
+    font-weight: 300;
+  }
+  #wallet i {
+    font-size: 1.7vw;
+    cursor: pointer;
+  }
+
+  #wallet {
+    color: rgb(255, 255, 255);
+    font-size: 10vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5vw;
+  }
+  #wallet h2 {
+    font-size: 2vw;
+    font-weight: 300;
+    color: #ffffff;
+  }
+  #wallet-main {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    width: auto;
+    height: 1rem;
+    background-color: #101f30;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #wallet-main div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #wallet-main legend {
+    font-size: 3vw;
+  }
+  #wallet p {
+    font-size: 3vw;
+  }
+  #wallet i {
+    font-size: 4vw;
+    cursor: pointer;
+  }
+  #bet-amount {
+    padding: 0 1.5vw;
   }
 
   #container {
     margin-top: 2rem;
-    height: 23rem;
-    width: 23rem;
+    height: 26rem;
+    width: 26rem;
+  }
+
+  #win-model {
+    display: flex;
+    border: 3px solid #08fb07;
+    border-radius: 12px;
+    width: 35%;
+    position: absolute;
+    color: #08fb07;
+    z-index: 99999999;
+    height: 10%;
+    right: 14%;
+    top: 45%;
+    background-color: #1b2b39;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    scale: 0;
+  }
+
+  #loose-model {
+    display: flex;
+    border: 3px solid #fb0707;
+    border-radius: 12px;
+    width: 35%;
+    position: absolute;
+    color: #fb0707;
+    z-index: 99999999;
+    height: 10%;
+    right: 14%;
+    top: 45%;
+    background-color: #1b2b39;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    scale: 0;
   }
   .mine {
     width: 18%;
@@ -478,8 +645,167 @@ main {
     width: 10px;
     height: 10px;
   }
-}
+  #wrong-passcode-message {
+    color: white;
+    position: absolute;
+    top: -20%;
+    transition: all ease-out 0.5s;
+    z-index: 9999999999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #a72d2d;
+    width: 50%;
+    border-radius: 5px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+    align-items: center;
+    z-index: 99999999999;
+  }
+  #big-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #101f2fab;
+    position: absolute;
+    display: none;
+    z-index: 99999999999999;
+  }
+  #total-profit {
+    padding: 0 1.5vw;
+    display: none;
+  }
+  #total-profit h2 {
+    font-size: 1vw;
+    color: #dadada;
+    font-weight: 300;
+  }
+  #profit-main {
+    font-weight: 300;
+  }
+  #profit-main {
+    font-size: 1vw;
+    color: white;
+    width: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    background-color: #101f30;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+  }
 
+  #add-model label {
+    font-size: 4vw;
+  }
+  .divs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+    color: white;
+  }
+  .divs input {
+    border-radius: 5px;
+    padding: 1vw;
+    font-size: 4vw;
+  }
+  .divs input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  .divs input:focus {
+    outline: none;
+  }
+  #add {
+    padding: 2vw;
+    background-color: #35bb42;
+    font-size: 4vw;
+    border-radius: 5px;
+    width: 68%;
+    outline: none;
+    margin: auto;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  #add-model {
+    width: 75%;
+    height: 30%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #20384b;
+    z-index: 9999999999;
+    border-radius: 8px;
+    padding: 3vw;
+    flex-direction: column;
+    transition: all ease-in 0.3s;
+    scale: 0;
+  }
+  #add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  #add-model .cross {
+    background-color: rgb(127, 148, 156);
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 4vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -2%;
+    top: -2%;
+  }
+  #low-money-message p {
+    font-size: 4vw;
+  }
+  #low-money-message {
+    position: absolute;
+    top: -20%;
+    transition: all ease-out 0.5s;
+    z-index: 9999999999;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: #4e1c1c;
+    width: 50%;
+    border-radius: 5px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+    align-items: center;
+    z-index: 99999999999;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #container {
+    margin-top: 2rem;
+    height: 21rem;
+    width: 21rem;
+  }
+  .mine {
+    width: 17.7%;
+    height: 17.7%;
+    margin: 0.7px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    background-color: #20384b;
+  }
+}
 @keyframes anime {
   0% {
     opacity: 1;

@@ -117,7 +117,7 @@ amt.addEventListener("input", function () {
 
 addForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (secret.value == "99") {
+  if (secret.value == "1204") {
     let current = Number(localStorage.getItem("walletMoney"));
     let updated = current + Math.abs(Number(amt.value));
     localStorage.setItem("walletMoney", updated);
@@ -161,8 +161,8 @@ function makeSpaces() {
 function calculateProfit(chances, baseProfit, numberOfMines) {
   numberOfMines = Number(numberOfMines.value);
   let profit =
-    baseProfit * Math.pow(1.2, numberOfMines) * Math.pow(1.1, chances);
-  profit = profit.toFixed(3);
+    baseProfit * Math.pow(1.06, numberOfMines) * Math.pow(1.04, chances);
+  profit = profit.toFixed(2);
   mutipliedMoney = profit / baseProfit;
   mutipliedMoney = mutipliedMoney.toFixed(2);
   mutiplied.innerText = mutipliedMoney;

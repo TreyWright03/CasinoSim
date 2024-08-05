@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mines</title>
+
     <link rel="stylesheet" href="/CasinoSim/Games/MinesGame/Mines.css" />
     <link rel="stylesheet" href="/CasinoSim/Games/MinesGame/Board.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="SideBar">
@@ -44,8 +49,8 @@
                     type="number"
                     name="amt"
                     id="amt"
-                    max="1000"
-                    placeholder="$69"
+                    max="100000"
+                    placeholder="$0"
                   />
                 </div>
                 <div class="divs">
@@ -56,7 +61,7 @@
               </form>
             </div>
             <div id="low-money-message">
-              <p>Not Enough Money</p>
+              <p>Not Enough Money!</p>
               <i class="ri-close-line close"></i>
             </div>
             <div id="wrong-passcode-message">
@@ -83,10 +88,9 @@
               </div>
             </div>
             <div id="loot">
-              <i id="volumeIcon" class="ri-volume-mute-line volume"></i>
               <div id="loot-overlay"></div>
               <div id="wallet">
-                <h2>wallet</h2>
+                <h2>Wallet</h2>
                 <div id="wallet-main">
                   <div>
                     <legend>$</legend>
