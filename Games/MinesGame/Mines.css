@@ -113,7 +113,6 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
 .Content {
   display: flex;
   flex-direction: column;
@@ -121,7 +120,7 @@ html {
   margin-right: auto;
   max-width: 1200px;
   height: 100%;
-  background-color: rgba(0, 17, 255, 0);
+  background-color: rgba(0, 255, 255, 0);
 }
 
 /* Responsive Styles */
