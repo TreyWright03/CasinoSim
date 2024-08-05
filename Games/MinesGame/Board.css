@@ -220,7 +220,7 @@ main {
   align-items: center;
   border: 1px solid #dadada;
   border-radius: 5px;
-  width: 48.8%;
+  width: 50%;
   height: 25%;
   padding-right: 1vw;
 }
@@ -259,8 +259,8 @@ main {
   gap: 2px;
 }
 .amt-btn {
-  width: 60px;
-  height: 60px;
+  width: 3.6rem;
+  height: 100%;
   font-size: 1vw;
   background-color: #2e4455;
   color: white;
@@ -489,19 +489,19 @@ main {
     align-items: center;
     border: 1px solid #dadada;
     border-radius: 5px;
-    width: 64.7%;
+    width: 61.8%;
     height: 25%;
     padding-right: 1vw;
   }
 
   .amt-btn {
+    width: 45px;
     font-size: 3vw;
     background-color: #2e4455;
     color: white;
     border: 1px solid #dadada;
     border-radius: 5px;
     cursor: pointer;
-    padding: 0.9vw;
   }
 
   #amount input {
