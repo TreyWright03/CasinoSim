@@ -69,13 +69,14 @@ html {
   background-color: rgba(91, 206, 87, 0);
 }
 
-img {
+.BannerContentFormat img {
   max-width: 87%;
   height: 87%;
   cursor: pointer;
 }
 
-p {
+#SignIn,
+#Register p {
   color: #ffffff;
   margin-top: 15px;
   font-weight: bold;
@@ -114,11 +115,13 @@ p {
 }
 
 .Content {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
   height: 100%;
-  background-color: rgb(0, 17, 255);
+  background-color: rgba(0, 17, 255, 0);
 }
 
 /* Responsive Styles */
