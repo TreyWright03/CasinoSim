@@ -47,13 +47,13 @@ let gems, mines, unClicked;
 function changeBetAmt() {
   half.addEventListener("click", () => {
     let currentBetAmt = Number(localStorage.getItem("betAmount"));
-    betAmount = (currentBetAmt / 2).toFixed(3);
+    betAmount = (currentBetAmt / 2).toFixed(2);
     inputField.value = betAmount;
     localStorage.setItem("betAmount", Math.abs(betAmount));
   });
   double.addEventListener("click", () => {
     let currentBetAmt = Number(localStorage.getItem("betAmount"));
-    betAmount = (currentBetAmt * 2).toFixed(3);
+    betAmount = (currentBetAmt * 2).toFixed(2);
     inputField.value = betAmount;
     localStorage.setItem("betAmount", Math.abs(betAmount));
   });
@@ -209,7 +209,7 @@ function workingBtn() {
 
         let updatedWalletMoney = (
           currentWalletMoney - Math.abs(betAmount)
-        ).toFixed(3);
+        ).toFixed(2);
         if (updatedWalletMoney < 0) {
           lowMoney.style.top = "10%";
           close.addEventListener("click", () => {
@@ -273,7 +273,7 @@ function plotMine() {
         let currentWalletMoney = Number(localStorage.getItem("walletMoney"));
         let updatedWalletMoney = (
           currentWalletMoney - Math.abs(betAmount)
-        ).toFixed(3);
+        ).toFixed(2);
         if (updatedWalletMoney < 0) {
           bigOverlay.style.display = "block";
           lowMoney.style.top = "10%";

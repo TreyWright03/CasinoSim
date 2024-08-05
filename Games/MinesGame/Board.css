@@ -206,7 +206,7 @@ main {
   background-color: #6dbd13;
 }
 #bet-amount h2 {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: #dadada;
   font-weight: 300;
 }
@@ -220,7 +220,7 @@ main {
   align-items: center;
   border: 1px solid #dadada;
   border-radius: 5px;
-  width: 37%;
+  width: 48.8%;
   height: 25%;
   padding-right: 1vw;
 }
@@ -228,7 +228,7 @@ main {
   padding: 0.8vw;
   font-size: 1.2vw;
   border: none;
-  width: 80%;
+  width: 100%;
   color: white;
   background-color: transparent;
 }
@@ -259,13 +259,14 @@ main {
   gap: 2px;
 }
 .amt-btn {
+  width: 60px;
+  height: 60px;
   font-size: 1vw;
   background-color: #2e4455;
   color: white;
   border: 1px solid #dadada;
   border-radius: 5px;
   cursor: pointer;
-  padding: 0.9vw;
 }
 #low-money-message p {
   font-size: 1.6vw;
