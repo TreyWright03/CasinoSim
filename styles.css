@@ -286,7 +286,7 @@ p {
 #Game5 {
   margin-left: 0.75rem;
   background-color: rgba(0, 195, 255, 0);
-  background-image: url("Images/blackjack.png");
+  background-image: url("Images/DragonTower.png");
   background-size: cover; /* Cover the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

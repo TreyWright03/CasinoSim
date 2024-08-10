@@ -1,0 +1,21 @@
+.GameMenu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 3rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.SideMenu {
+    width: 18rem;
+    height: 46rem;
+    background-color: rgb(206, 93, 93);
+}
+
+.Game {
+    width: 57rem;
+    height: 46rem;
+    background-color: rgb(93, 180, 206);
+}
+
