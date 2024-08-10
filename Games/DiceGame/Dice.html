@@ -1,10 +1,62 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CasinoSim/Games/Games.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dice</title>
+
+    <link rel="stylesheet" href="/CasinoSim/Games/Games.css" />
+    <link rel="stylesheet" href="/CasinoSim/Games/DiceGame/Dice.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="SideBar">
+      <div id="ThreeLines"></div>
+      <div id="Home"></div>
+    </div>
+    <div class="Main">
+      <div class="Banner">
+        <div class="BannerContentFormat">
+          <img
+            src="/CasinoSim/Images/logo.png"
+            onclick="window.location.href='/CasinoSim/index.html';"
+          />
+          <div id="SignIn">
+            <p>Sign In</p>
+          </div>
+          <div id="Register">
+            <p>Register</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="UnderBanner">
+        <div class="Content">
+          <div class="GameMenu">
+            <div class="SideMenu">
+
+              <div class="amount">
+
+              </div>
+              <div class="NetGain">
+
+              </div>
+            </div>
+
+            <div class="Game">
+              <div class="Multipliers">
+
+              </div>
+              <div class="Slider">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Dice.js"></script>
+  </body>
 </html>
